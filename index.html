@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>prÉseNtaTiOn dE maThIs paSTorElLi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <img src="http://www.bandajoe.com/images/BB_bandajoe.jpg" alt="">
+    </header>
+    <article>
+      <span style="color: #F8ED26;"><b style="font-size: 200px;">BON</b>jour<b style="font-size: 300px;">!</b></span>
+      <p>J e m'a p p e l l e <span style="text-decoration:line-through"> p e l l e </span> M a t h i s.</p>
+      <img id="tlse" src="https://www.toulouse-tourisme.com/sites/www.toulouse-tourisme.com/files/styles/incontournable_hp/public/thumbnails/image/incontournables_0.jpg?itok=ONMpUZ8k" alt="">
+      <span id="vus" style="display: none;">Je vous ai vus ce jour-là, c t tro kool.<br></span>
+      <p id="saxo">JeujoudusSaxofauneaideullaGuy-Tare,méjèmréaprandRdotrzainstRuemans.<br></p>
+      <p id="couleur">DEVINEZ QUELLE EST MA COULEUR PRÉFÉRÉE?</p>
+      <img id="fermat" width="300px" src="http://img.over-blog-kiwi.com/0/96/23/01/20150122/ob_0cfff0_fermat-entree-e1417781326491.jpg" alt="">
+      <audio src="lega.m4a" id="lega">
+
+      </audio>
+    </article>
+
+    <script type="text/javascript">
+      var tlse = document.getElementById("tlse");
+      var vus = document.getElementById("vus");
+      var fermat = document.getElementById("fermat");
+      var lega = document.getElementById("lega");
+
+      tlse.addEventListener("mouseover", function(){
+        tlse.src = "tlseBAJ.jpg";
+        vus.style.display = "block";
+      });
+      tlse.addEventListener("mouseout", function() {
+        tlse.src = "https://www.toulouse-tourisme.com/sites/www.toulouse-tourisme.com/files/styles/incontournable_hp/public/thumbnails/image/incontournables_0.jpg?itok=ONMpUZ8k";
+        vus.style.display = "none";
+      });
+
+      fermat.addEventListener("mouseover", function(){
+        lega.play();
+      });
+      fermat.addEventListener("mouseout", function() {
+        lega.pause();
+      });
+    </script>
+
+
+  </body>
+</html>

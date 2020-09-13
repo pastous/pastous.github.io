@@ -1,0 +1,30 @@
+#saxo {
+  transform: rotate(180deg);
+  transition: 5s linear;
+  display: block;
+}
+
+#saxo:hover {
+  transform: rotate(36000deg);
+}
+
+#couleur {
+  transition: 500ms linear;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+#couleur:hover {
+  color: #F8ED26;
+  transform: scale(5);
+
+}
+
+#fermat {
+  transition: 3s linear;
+}
+
+#fermat:hover {
+  filter: grayscale(100%);
+}
